@@ -3,7 +3,7 @@
   "displayName": "BillReader",
   "version": "1.0.0",
   "description": "An Apache Cordova application that responds to the deviceready event for the billreader application",
-  "main": "index.html"
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	"start": "cordova run"

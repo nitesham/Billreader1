@@ -1,0 +1,378 @@
+	
+.imageBox1
+{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox1 .thumbBox1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    /*width: 400px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -200px;
+	margin-right: 50px;*/
+	width: 400px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -200px;
+	margin-right: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox1 .spinner1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+/*   -------------2nd image---------*/
+
+.imageBox2
+{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox2 .thumbBox2
+{
+    position: absolute;
+    
+    /*width: 400px;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: -200px;
+	margin-right: 50px;*/
+	top: 50%;
+    left: 22%;
+    width: 410px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -95px;
+	margin-right: 0px;
+	
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox2 .spinner2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+/*   -------------3rd image---------*/
+
+.imageBox3
+{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox3 .thumbBox3
+{
+    position: absolute;
+    top: 50%;
+    
+    /*width: 400px;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: -200px;
+	margin-right: 50px;*/
+	left: 21%;
+    width: 410px;
+    height: 50px;	
+    margin-top: -25px;
+    margin-left: -95px;
+	margin-right: 0px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox3 .spinner3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+/*   -------------4th image---------*/
+
+.imageBox4
+{
+    position: relative;
+    height: 700px;
+    width: 500px;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox4 .thumbBox4
+{
+    position: absolute;
+    top: 35%;    	
+    /*width: 400px;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: -200px;
+	margin-right: 50px;*/
+	left: 18%;
+    width: 510px;
+    height: 450px;	
+    margin-top: -125px;
+    margin-left: -90px;
+	margin-right: 0px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox4 .spinner4
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+/*-----------------5th image ----------*/
+
+.imageBox5
+{
+    position: relative;
+    height: 700px;
+    width: 500px;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox5 .thumbBox5
+{
+    position: absolute;
+    top: 24%;   
+    /*width: 400px;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: -200px;
+	margin-right: 50px;*/
+	left: 18%;
+    width: 510px;
+    height: 610px;	
+    margin-top: -125px;
+    margin-left: -90px;
+	margin-right: 0px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox5 .spinner5
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+/*   -------------6th image---------*/
+
+.imageBox6
+{
+    position: relative;
+    height: 600px;
+    width: 500px;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox6 .thumbBox6
+{
+    position: absolute;
+    
+    /*width: 400px;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: -200px;
+	margin-right: 50px;*/
+	top: 40%;
+    left: 19%;
+    width: 500px;
+    height: 300px;
+    margin-top: -89px;
+    margin-left: -95px;
+	margin-right: 0px;
+	
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox6 .spinner6
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+/*   -------------7th image---------*/
+
+.imageBox7
+{
+    position: relative;
+    height: 600px;
+    width: 500px;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox7 .thumbBox7
+{
+    position: absolute;   
+    /*width: 400px;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: -200px;
+	margin-right: 50px;*/
+	top: 28%;
+    left: 19%;
+    width: 500px;
+    height: 400px;
+    margin-top: -68px;
+    margin-left: -95px;
+	margin-right: 0px;
+	
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox7 .spinner7
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+.imageBox8
+{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border:1px solid #aaa;
+    
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox8 .thumbBox8
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    /*width: 400px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -200px;
+	margin-right: 50px;*/
+	width: 400px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -200px;
+	margin-right: 50px;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.imageBox8 .spinner8
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    
+}

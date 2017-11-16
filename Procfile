@@ -1,0 +1,1 @@
+web:cordova run

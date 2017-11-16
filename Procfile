@@ -1,1 +1,1 @@
-web:cordova run
+web:node index.js

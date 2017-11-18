@@ -368,7 +368,15 @@
 		  <div class="col-md-6 col-md-offset-4">
 		  <input type="button" class="edited_image button1" value="Image OK" hidden>
 	      </br></br>
-	      <p id="load" hidden><b>Wait For a Moment.....Press Submit</b></p>
+		  <!--<div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>-->
+		  
+	<div class="progress progress-striped active" id="load" hidden>
+      <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%;transition:none;">
+    </div>
+    </div>
+	      <!--<p id="load" hidden><b>Wait For a Moment.....Press Submit</b></p>-->
           <input  type="submit" id="submit" class="button1" name="submit" hidden>
 		  </div>
     </div>
@@ -377,23 +385,11 @@
    
     <!--</form>--> 
 </div>
-	<!--<script>
-	var myElement = document.getElementById('imageBox1');
-
-	// create a simple instance
-	// by default, it only adds horizontal recognizers
-	var mc = new Hammer(myElement);
-
-	// listen to events...
-	mc.on("panleft panright tap press", function(ev) {
-		myElement.textContent = ev.type +" gesture detected.";
-	});
-	</script>-->
-			
 
 <script type='text/javascript'>
 
   $(window).load(function(){
+  
 			var canvas;
 			var context;
 			var image;
@@ -1210,6 +1206,18 @@
 });	
 				
 </script>
+
+  <script>
+	  var progressBar = $("div.progress-bar");
+	  var x = 0;
+	  var increment = function() {
+	  x = (x > 100) ? 0 : x + 0.5;
+	  progressBar.css('width', (x % 100) + '%');
+	 };
+
+
+	 window.setInterval(increment, 50);
+	</script>
 				
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

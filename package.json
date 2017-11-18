@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cordova run browser"
+    "start": "cordova run"
   },
   "author": "Meeccon",
   "license": "Apache-2.0",

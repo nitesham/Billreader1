@@ -2,12 +2,7 @@
   "name": "billreader",
   "displayName": "BillReader",
   "version": "1.0.0",
-  "description": "An Apache Cordova application that responds to the deviceready event for the billreader application",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cordova run"
-  },
+  "description": "An Apache Cordova application that responds to the deviceready event for the billreader application", 
   "author": "Meeccon",
   "license": "Apache-2.0",
   "dependencies": {
@@ -26,5 +21,8 @@
     "platforms": [
       "browser"
     ]
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
   }
 }

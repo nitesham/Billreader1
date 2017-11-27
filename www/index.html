@@ -19,6 +19,8 @@
 -->
 <html>
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
    <script src="js/tesseract.js"></script>
    <script src="js/ocr.js"></script>  
    <script src="js/jquery.min.js"></script>
@@ -331,14 +333,20 @@
 		  <div class="col-md-6 col-md-offset-4">
 		  <input type="button" class="edited_image button1" value="Image OK" hidden>
 	      </br></br>
-		  <!--<div class="progress">
-          <div class="progress-bar progress-bar-striped" role="progressbar" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>-->
 		  
-	<div class="progress progress-striped active" id="load" hidden>
-      <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%;transition:none;">
-    </div>
-    </div>
+		  <div class="progress" id="25" style="height:23px;" hidden>
+                <div class="progress-bar progress-bar-striped active progress-bar-animated" style="width:25%;font-size:18px;">25%</div>
+          </div>
+		  <div class="progress" id="50" style="height:23px;" hidden>
+                <div class="progress-bar progress-bar-striped active progress-bar-animated" style="width:50%;font-size:20px;">50%</div>
+          </div>
+		  <div class="progress" id="75" style="height:23px;" hidden>
+                <div class="progress-bar progress-bar-striped active progress-bar-animated" style="width:75%;font-size:20px;">75%</div>
+          </div>
+		  <div class="progress" id="100" style="height:23px;" hidden>
+                <div class="progress-bar progress-bar-striped active progress-bar-animated" style="width:100%;font-size:20px;">100% Complete</div>
+          </div>
+		  
 	      <!--<p id="load" hidden><b>Wait For a Moment.....Press Submit</b></p>-->
           <input  type="submit" id="submit" class="button1" name="submit" hidden>
 		  </div>

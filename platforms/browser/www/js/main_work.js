@@ -651,27 +651,14 @@ $(document).ready(function(){
 	 <!--------   tesseract part   --------->
 	 
             $(".edited_image").click(function(e) {
-				$('#load').show();
+				$('#25').show();
 				$(".edited_image").hide();	
 				handleInputChange();
-				handleInputChange1();
-				handleInputChange2();
-				var imgval2 = document.getElementById("res1").value;				
-				 if (imgval2 == 0)
-				 {
-				    handleInputChange5();					 
-				 }else if(imgval2 == 1)
-				 {
-					 handleInputChange6();
-				 }else if(imgval2 == 2)
-				 {
-					 handleInputChange3();
-				 }else if(imgval2 == 3)
-				 {
-					 handleInputChange4();
-				 }
+				//handleInputChange1();
+				//handleInputChange2();
+				
 								
-			});
+			
 			
 	 function handleInputChange(){ 
 	       //alert("hi");
@@ -688,9 +675,8 @@ $(document).ready(function(){
 			  //alert("tess1");
          var contentArea = document.getElementById('document_content');	     
         contentArea.innerHTML = result.text; 	
-        $('#load').show();
-		
-        //$('#submit').show().css("background-color", " ");  
+        //$('#load').show();
+		handleInputChange1();				        
 
       })
             .catch(function(err){
@@ -701,7 +687,8 @@ $(document).ready(function(){
     }
 	
 	function handleInputChange1(){ 
-	      
+	        $('#25').hide();
+		    $('#50').show();
 		  var language = 'eng'
          
              console.log(img2);		
@@ -714,10 +701,8 @@ $(document).ready(function(){
 			  console.log('result is: ', result1);
          var contentArea1 = document.getElementById('document_content1');	     
         contentArea1.innerHTML = result1.text; 	
-        $('#load').show();
-		
-        //$('#submit').show().css("background-color", " ");  
-
+        //$('#load').show();
+		   handleInputChange2();
       })
             .catch(function(err){
                 console.error(err);
@@ -727,7 +712,9 @@ $(document).ready(function(){
     }
 	
 	function handleInputChange2(){ 
-	       //alert("hi");
+	    $('#50').hide();	  
+	    $('#75').show();
+		
 		  var language = 'eng'         
         console.log(img3);		
         Tesseract.recognize(img3)
@@ -737,10 +724,36 @@ $(document).ready(function(){
           .then(function(result2) {
 			  //alert("tess1");
          var contentArea2 = document.getElementById('document_content2');	     
-        contentArea2.innerHTML = result2.text; 	
-        $('#load').hide();		
-        $('#submit').show().css("background-color", " "); 		
-           
+        contentArea2.innerHTML = result2.text;
+                    
+					
+				 var imgval2 = document.getElementById("res1").value;				
+				 if (imgval2 == 0)
+				 {	
+                       $('#75').hide();	
+                       $('#100').show();			 
+				    handleInputChange5();
+					
+				 }else if(imgval2 == 1)
+				 {
+					 $('#75').hide();	
+                     $('#100').show();	
+					 handleInputChange6();
+					 
+				 }else if(imgval2 == 2)
+				 {		
+			         $('#75').hide();	
+                     $('#100').show();	
+					 handleInputChange3();
+					 
+				 }else if(imgval2 == 3)
+				 {
+					 $('#75').hide();	
+                     $('#100').show();	
+					 handleInputChange4();
+					 
+				 }
+        		            	
       })
             .catch(function(err){
                 console.error(err);
@@ -749,9 +762,10 @@ $(document).ready(function(){
                     });
     }
 
+	             
 	
-	function handleInputChange3(){ 
-	               //alert("1");
+	
+	    function handleInputChange3(){ 	              
 				  var language = 'eng'         
 				   console.log(img4);		
 				   Tesseract.recognize(img4)
@@ -762,7 +776,7 @@ $(document).ready(function(){
 					  //alert("tess1");
 				 var contentArea3 = document.getElementById('document_content5');	     
 				contentArea3.innerHTML = result3.text; 	
-				$('#load').hide();				
+				//$('#load').hide();				
 				$('#submit').show().css("background-color", " ");  
 
 			  })
@@ -774,7 +788,8 @@ $(document).ready(function(){
 			}
 			
 			function handleInputChange4(){ 
-	               //alert("2");
+	               //$('#75').hide();	
+                   //$('#100').show();
 				  var language = 'eng'         
 				   console.log(img5);		
 				   Tesseract.recognize(img5)
@@ -785,7 +800,7 @@ $(document).ready(function(){
 					  //alert("tess1");
 				 var contentArea4 = document.getElementById('document_content6');	     
 				contentArea4.innerHTML = result4.text; 	
-				$('#load').hide();
+				//$('#load').hide();
 				//$('#document_content4').show();
 				$('#submit').show().css("background-color", " ");  
 
@@ -797,8 +812,7 @@ $(document).ready(function(){
 							});
 			}
 			
-			 function handleInputChange5(){ 
-	               //alert("3");
+			 function handleInputChange5(){ 	                 
 				  var language = 'eng'         
 				   console.log(img6);		
 				   Tesseract.recognize(img6)
@@ -809,7 +823,7 @@ $(document).ready(function(){
 					//console.log('result is: ', result5);
 				 var contentArea5 = document.getElementById('document_content3');	     
 				contentArea5.innerHTML = result5.text; 	
-				$('#load').hide();
+				//$('#load').hide();
 				//$('#document_content4').show();
 				$('#submit').show().css("background-color", " ");  
 
@@ -822,7 +836,8 @@ $(document).ready(function(){
 			}
 			
 			function handleInputChange6(){ 
-	               //alert(123);
+	               //$('#75').hide();	
+                   //$('#100').show();
 				  var language = 'eng'         
 				   console.log(img7);		
 				   Tesseract.recognize(img7)
@@ -833,7 +848,7 @@ $(document).ready(function(){
 				  
 				 var contentArea6 = document.getElementById('document_content4');	     
 				contentArea6.innerHTML = result6.text; 	
-				$('#load').hide();
+				//$('#load').hide();
 				//$('#document_content4').show();
 				$('#submit').show().css("background-color", " ");  
 
@@ -844,7 +859,7 @@ $(document).ready(function(){
 				$('#document_content4').change(function(){
 							});
 			} 
-			
+		});	
 	 
 		 
 });	
@@ -852,7 +867,7 @@ $(document).ready(function(){
 
 
     
-	  var progressBar = $("div.progress-bar");
+	  /* var progressBar = $("div.progress-bar");
 	  var x = 0;
 	  var increment = function() {
 	  x = (x > 100) ? 0 : x + 0.5;
@@ -860,5 +875,5 @@ $(document).ready(function(){
 	 };
 
 
-	 window.setInterval(increment, 50);
+	 window.setInterval(increment, 50); */
 	

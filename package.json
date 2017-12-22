@@ -5,7 +5,7 @@
   "description": "An Apache Cordova application that responds to the deviceready event for the billreader application",
   "author": "Meeccon",
   "license": "Apache-2.0",
-  "start": "node main_work.js",
+  "main": "index.js",
   "dependencies": {
     "cordova-browser": "^5.0.1",
     "cordova-plugin-whitelist": "^1.3.2",

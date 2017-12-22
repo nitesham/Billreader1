@@ -19,7 +19,9 @@
 var app = {
     // Application Constructor
     initialize: function() {
+		//alert("hi");
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+		//alert("hi1");
     },
 
     // deviceready Event Handler
@@ -27,10 +29,13 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        this.receivedEvent('deviceready');
+        // this.receivedEvent('deviceready');
+		alert("1234");
+		ready();
+		alert("123");
     },
 
-    // Update DOM on a Received Event
+    /* // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
@@ -40,7 +45,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
+    } */
 };
 
 app.initialize();

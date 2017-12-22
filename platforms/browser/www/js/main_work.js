@@ -33,7 +33,10 @@ $(function(){
 
 
 $(document).ready(function(){
-  
+  function ready(){
+	  
+	  alert("12345");
+      }
 			var canvas;
 			var context;
 			var image;
